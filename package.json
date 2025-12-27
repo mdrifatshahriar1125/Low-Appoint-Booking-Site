@@ -1,0 +1,16 @@
+{
+  "name": "Lower-Appointment-Booking",
+  "description": "MERN Stack Lawyer Appointment Booking Web Application",
+  "version": "1.0.0",
+  "author": "Your Name",
+  "license": "MIT",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "setup": "npm run install-all",
+    "seed-db": "cd backend && node seed.js"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
