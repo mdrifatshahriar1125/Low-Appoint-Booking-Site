@@ -1,0 +1,124 @@
+.bookings-page {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.bookings-page h1 {
+  color: #1f2937;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.no-appointments {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f9fafb;
+  border-radius: 12px;
+  margin: 30px 0;
+}
+
+.no-appointments h2 {
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+.no-appointments p {
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+.back-home-btn {
+  background: linear-gradient(135deg, #1e40af 0%, #7c3aed 100%);
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.back-home-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.4);
+}
+
+.chart-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.chart-section h2 {
+  color: #1f2937;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.appointments-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.appointment-item {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #7c3aed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.appointment-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transform: translateX(4px);
+}
+
+.appointment-details h3 {
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.appointment-details p {
+  color: #6b7280;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.cancel-btn {
+  background: #ef4444;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+.cancel-btn:hover {
+  background: #dc2626;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .appointment-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cancel-btn {
+    margin-left: 0;
+    margin-top: 15px;
+    width: 100%;
+  }
+}
